@@ -1,0 +1,110 @@
+.container{
+ min-height: 100vh;
+ display: flex;
+  align-items: center;
+  background:hsl(185, 41%, 84%)
+}
+.grid{
+  width: 700px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 20px;
+  gap: 10px;
+}
+.coluna1{
+  min-width:50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+}
+.coluna2 {
+  background: hsl(183, 100%, 15%);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 50%;
+  border-radius: 10px;
+}
+
+.gridButton{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.bill-label{
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+}
+.bill-label:hover{
+  background-color: hsl(183, 44%, 47%);
+  transform: scale(1.03);
+  transition: 300ms linear;
+  
+}
+.active{
+  background-color: hsl(183, 44%, 47%);
+  border: 3px solid hsl(183, 100%, 15%) ;
+  transform: scale(1.02);
+}
+.custom{
+  
+}
+
+.bill-radio{
+  display: none;
+}
+
+.gridButton input{
+  height: 46px;
+  width: 96px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(180, 6%, 94%);
+}
+.input{
+  min-width: 96%;
+  height: 30px;
+  border: none;
+  border-radius:10px ;
+  background-color: hsl(180, 6%, 94%);
+}
+.valor{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+}
+.btn{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  color: aliceblue;
+  background: hsl(152, 92%, 34%);
+  border: none;
+  border-radius: 10px;
+}
+@media (min-width:320px) and (max-width:700px){
+  .grid{
+    height: auto;
+    display: block;
+  }
+  .coluna1{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .coluna2{
+    padding: 10px;
+  }
+}
